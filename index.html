@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .nav
+        {
+            /* align-items: flex-end; */
+            /* justify-content: space-between; */
+            /* flex-direction: column; */
+             /* flex-direction: column;
+            justify-content: flex-end; */
+
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+             /* flex-direction: column;  */
+            /* align-items: flex-start; */
+
+            height: 500px;
+            background-color: black;
+            
+            display: flex;
+        }
+
+        .item{
+            color: white;
+            background-color: brown;
+            padding: 20px;
+            margin: 20px;
+            font-size: 25px;
+            flex-grow:  1;
+
+
+
+            /* flex: 0 1 200px; grow, shrink, basis */
+        }
+
+        .item1{
+
+            /* align-self: flex-start; */
+            /* flex-grow: 2; */
+            flex: 25%;
+            /* order: 3; */
+        }
+
+        .item2{
+            
+            /* align-self: flex-end; */
+            /* flex-grow: 1; */
+            /* order: 2; */
+            flex: 25%;
+        }
+        .item3{
+            /* flex-basis: 200px;
+            flex-shrink: 0; */
+            flex: 50%;
+            order: 0;
+        }
+        /* .item4{
+            flex-grow: 1;
+        }  */
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="item item1">first</div>
+        <div class="item item2">second</div>
+        <div class="item item3">third</div>
+        <!-- <div class="item item4">third</div> -->
+
+    </div>
+</body>
+</html>

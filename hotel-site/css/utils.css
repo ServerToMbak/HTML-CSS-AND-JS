@@ -1,0 +1,123 @@
+
+
+
+:root{
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warnings: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+/* text color */
+
+.text-white{color: var(--white);}
+.text-primary{color: var(--primary);}
+.text-secondary{color: var(--secondary);}
+.text-success{color: var(--success);}
+.text-danger{color: var(--danger);}
+.text-warnings{color: var(--warnings);}
+.text-info{color: var(--info);}
+.text-dark{color: var(--dark);}
+.text-light{color: var(--light);}
+
+
+/* bg-colors */
+.bg-white{background-color: var(--white);}
+.bg-primary{background-color: var(--primary);}
+.bg-secondary{background-color: var(--secondary);}
+.bg-success{background-color: var(--success);}
+.bg-danger{background-color: var(--danger);}
+.bg-warnings{background-color: var(--warnings);}
+.bg-info{background-color: var(--info);}
+.bg-dark{background-color: var(--dark);}
+.bg-light{background-color: var(--light);}
+
+/* buttons */
+
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn-white{
+    color: var(--success);
+    background-color: var(--white);
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.btn-success{
+    background-color: var(--success);
+    color: var(--white);
+}
+.btn-danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+.btn-warnings{
+    background-color: var(--warnings);
+    color: var(--white);
+}
+.btn-info{
+    background-color: var(--info);
+    color: var(--white);
+}
+.btn-dark{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.btn-outline-primary{
+    background: transparent;
+    border: 1px solid var(--primary);
+    color:var(--dark);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color:var(--white);
+}
+.btn-light{
+    background-color: var(--light);
+    color: var(--white);
+}
+
+/* flex items */
+
+.flex-items{
+    height: 100%;;
+    display: flex;
+    text-align: center;
+    justify-content:   center ;
+    
+}
+
+.flex-items div{
+    padding: 20px;
+    flex-basis: 100%;
+}
+
+/* flex grid */
+
