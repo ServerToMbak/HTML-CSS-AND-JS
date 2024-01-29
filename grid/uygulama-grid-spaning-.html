@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5px;
+        }
+        header{
+            background-color: red;
+            grid-column: 1/ span 3;
+            text-align: center;
+           
+        }
+        .content{
+            display: grid;
+            background-color: beige;
+            grid-column: 1/  span 2;
+        }
+        
+
+        .footer{
+            background-color: red;
+            grid-column: 1/ span 3;
+        }
+
+        .box-1{
+            
+            grid-column: 1/span 3;
+        }
+
+        .box-3{
+            
+            grid-column: 2/span 2;
+        }
+        .box-1, .box-2, .box-3, .content, .header{
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Page Headher</h2>
+        </header>
+
+        <section class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestiae 
+                recusandae sit, quae, explicabo soluta eligendi sapiente delectus eum 
+                fugiat nulla deserunt reprehenderit totam dignissimos 
+                officiis ea pariatur? Amet, quas.
+            </p>
+        </section>
+
+        <section class="sidebar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <div class="box-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime in rem, dignissimos doloribus 
+            numquam, veniam enim aliquam, nisi provident vitae voluptatum optio ad
+            porro perferendis necessitatibus totam nesciunt fugiat corporis.
+        </div>
+        <div class="box-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime in rem, dignissimos doloribus 
+            numquam, veniam enim aliquam, nisi provident vitae voluptatum optio ad
+            porro perferendis necessitatibus totam nesciunt fugiat corporis.
+        </div>
+        <div class="box-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime in rem, dignissimos doloribus 
+            numquam, veniam enim aliquam, nisi provident vitae voluptatum optio ad
+            porro perferendis necessitatibus totam nesciunt fugiat corporis.
+        </div>
+        
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
