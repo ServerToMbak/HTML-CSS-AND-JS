@@ -1,0 +1,101 @@
+// home section
+
+#home{
+    // home section a
+
+    &__a{
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1rem;
+            margin: 2rem;
+
+            i{
+                color: $primary-color;
+                padding-bottom: .5rem;
+            }
+        }
+    }
+
+
+    // sectipon b
+
+    &__b{
+        .profile{
+            display: grid;
+            grid-template-columns: repeat(4,1fr); 
+
+            li{
+                &.title{
+                    font-size: 1.5rem;
+                }
+                &.number{
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            div{
+                padding: 3rem;
+    
+                &:nth-child(odd)
+                {
+                    background-color: $light-color;
+                }
+                &:nth-child(odd)
+                {
+                    background-color: $medium-color;
+                }
+            }
+        }
+
+    
+    }
+
+    // section c
+
+    &__c{
+
+
+        .process{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1.5rem;
+            text-align: center;
+
+
+            &__step{
+                position:  absolute;
+                top: 0;
+                right: 0;
+                background: $primary-color;
+                font-size: 25px;
+                border-radius: 50%;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+            }
+
+            &__icon{
+                position:  relative;
+                width: 125px;
+                background: $dark-color;
+                height: 125px;
+                color: #fff;
+                text-align: center;
+                padding: 2rem;
+                border-radius: 50%;
+
+                &:hover{
+                    background: $primary-color;
+
+                    .process__step{
+                        background-color: $dark-color;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+}
