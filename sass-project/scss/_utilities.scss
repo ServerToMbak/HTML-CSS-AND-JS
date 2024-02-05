@@ -28,7 +28,7 @@
     }
     &-dark{
         @extend %btn-shared;  
-        color: #333;
+        color: #fff;
         background-color: $dark-color;
     }
 }
@@ -97,6 +97,7 @@ input[class^='btn']:hover{
     font-size: 2rem;
     padding-bottom: 1rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .border-bottom{
